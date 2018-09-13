@@ -1,0 +1,20 @@
+.jumbotron {
+    background-image: url("https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?cs=srgb&dl=forest-haze-landscape-39811.jpg&fm=jpg");
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: aliceblue;
+    
+}
+.text-muted {
+    color: antiquewhite;
+}
+.navbar {
+    padding-bottom: 50px;
+    font-size: 24px;
+    
+}
+.nav-link {
+    color: aliceblue;
+}
