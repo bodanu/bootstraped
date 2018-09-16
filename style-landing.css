@@ -1,0 +1,30 @@
+.page-background {
+  background: url("https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?cs=srgb&dl=ai-blur-codes-577585.jpg&fm=jpg")
+    no-repeat center center;
+
+  background-size: cover;
+
+  height: 100vh;
+}
+.cta {
+  position: relative;
+  display: none;
+  top: 25%;
+
+  /* transform: translateY(-35%); */
+
+  background: rgba(0, 0, 0, 0.5);
+
+  padding: 5rem;
+}
+@media screen and (max-width: 600px) {
+  .cta {
+    top: 10%;
+  }
+}
+#footer {
+  height: 19rem;
+  background-size: cover;
+  background-position: bottom;
+  background: url("https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?cs=srgb&dl=ai-blur-codes-577585.jpg&fm=jpg");
+}
