@@ -33,11 +33,11 @@ $("document").ready(function() {
       links: [usefull]
     },
   });
-  console.log(usefull);
-  //   for (var i in usefull) {
-  //     console.log("row " + i);
-  //     for (var j in usefull[i]) {
-  //       console.log(" " + usefull[i][j]);
-  //     }
-  //   }
+  console.log(usefull.length);
+    for (var i in usefull) {
+       console.log("row " + i);
+       for (var j in usefull[i]) {
+         console.log(" " + usefull[i][j]);
+       }
+     }
 });
