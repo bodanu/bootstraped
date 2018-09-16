@@ -25,13 +25,23 @@ $("document").ready(function() {
       .removeClass("active");
   });
   
-  var usefull = $("a").text();
+  var usefull= []
+    $(".nav-item").each(function(index, obj){
+    usefull.push($(this).text());
+
+  });
+  var links = {
+    name : usefull
+  }
+  
 
   var linkSection = new Vue({
     el: "#links-link",
     data: {
-      links: [usefull]
+      links: usefull,
+      names: "john, wick"
     },
+    
   });
   console.log(usefull.length);
     for (var i in usefull) {
