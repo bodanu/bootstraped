@@ -24,14 +24,14 @@ $("document").ready(function() {
       .siblings()
       .removeClass("active");
   });
-  var links = $("a");
-  var usefull = document.getElementById("menu").textContent;
+  
+  var usefull = $("a").text();
 
   var linkSection = new Vue({
     el: "#links-link",
     data: {
-      links: document.getElementById("menu").textContent
-    }
+      links: [usefull]
+    },
   });
   console.log(usefull);
   //   for (var i in usefull) {
