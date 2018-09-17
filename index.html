@@ -25,19 +25,25 @@
             <div id="navdiv" class="collapse navbar-collapse" id="navbarNav">
                 <ul id="menu" class="navbar-nav">
                     <li class="nav-item">
-                        <a id="primul" class="nav-link" href="#links">Links <span class="sr-only">(current)</span></a>
+                        <a title="primul" class="nav-link" href="#links">Links</a>
                     </li>
                     <li class="nav-item">
-                        <a id="primul" class="nav-link" href="#projets">Projects</a>
+                        <a title="doilea" class="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a id="primul" class="nav-link" href="#plans">Future Plans</a>
+                        <a title="treilea" class="nav-link" href="#projects">Pcts</a>
                     </li>
                     <li class="nav-item">
-                        <a id="primul" class="nav-link" href="#projets">Projects</a>
+                        <a title="patrulea" class="nav-link" href="#projects">Cacao</a>
                     </li>
                     <li class="nav-item">
-                        <a id="primul" class="nav-link" href="#plans">Future Plans</a>
+                        <a title="cacao" class="nav-link" href="#plans">Future Plans</a>
+                    </li>
+                    <li class="nav-item">
+                        <a title="primul" class="nav-link" href="#projets">Nothing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a title="primul" class="nav-link" href="#plans">Testing</a>
                     </li>
 
                 </ul>
@@ -46,7 +52,11 @@
 
 
         </nav>
+        <div id="routes" class="routes text-white">
+            <router-link to='/'>Home</router-link>
+            <router-view></router-view>
 
+        </div>
         <div id="cta" class="cta container rounded text-center text-white">
 
             <h1>Welcome!!</h1>
@@ -138,12 +148,13 @@
                     <h5>Site links</h5>
                     <div id="links-list">
 
-                        
-                            <ul id="links-link">
-                                <li v-for="i in links">{{i}}</li>
 
-                            </ul>
-                        
+                        <ul id="links-link">
+                            <li v-for="i in links"><a class="text-white" href="#">{{i.nume}}</a></li>
+
+                        </ul>
+
+
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-4">
@@ -166,6 +177,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="mustache.js"></script>
+    <script src="vue-router.js"></script>
+    <script src="routing.js"></script>
 
 </body>
 

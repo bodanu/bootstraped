@@ -24,30 +24,41 @@ $("document").ready(function() {
       .siblings()
       .removeClass("active");
   });
-  
-  var usefull= []
-    $(".nav-item").each(function(index, obj){
+
+  var usefull = [];
+  $(".nav-item").each(function(index, obj) {
     usefull.push($(this).text());
-
   });
-  var links = {
-    name : usefull
-  }
-  
-
+  var values = [];
+  $("a").each(function() {
+    var el = $(this);
+    values.push({
+      tinta: el.attr("href"),
+      nume: el.attr("title")
+    });
+  });
   var linkSection = new Vue({
     el: "#links-link",
     data: {
-      links: usefull,
-      names: "john, wick"
-    },
-    
+      links: values
+    }
   });
-  console.log(usefull.length);
-    for (var i in usefull) {
-       console.log("row " + i);
-       for (var j in usefull[i]) {
-         console.log(" " + usefull[i][j]);
-       }
-     }
+
+  var titles = [];
+  $("a").each(function(index, obj) {
+    titles.push($(this).text());
+  });
+
+  var firstLink = {
+    title: titles,
+    value: values
+  };
+  console.log(values);
+  // console.log(usefull.length);
+  //   for (var i in usefull) {
+  //      console.log("row " + i);
+  //      for (var j in usefull[i]) {
+  //        console.log(" " + usefull[i][j]);
+  //      }
+  //    }
 });
